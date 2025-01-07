@@ -1,7 +1,10 @@
 @import "../../styles/variables";
 
 .nav {
-  background-color: red;
+  background-image: url("public/assets/images/slide1.jpg");
+  background-position: top;
+  background-size: 100%;
+  background-repeat: no-repeat;
   width: 100%;
   ul {
     display: grid;
@@ -13,17 +16,19 @@
     min-height: 90px;
     list-style: none;
     a {
-      color: $color-black;
+      color: $color-white;
       text-align: center;
       text-decoration: none;
       text-transform: uppercase;
     }
     .logo {
+      font-weight: normal;
       margin: 0, 1rem;
+      color: $color-white;
       font-size: $font-large;
+      font-family: lobster;
       text-align: center;
       text-transform: lowercase;
-      font-family: lobster;
     }
   }
 }

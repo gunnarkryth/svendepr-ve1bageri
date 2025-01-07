@@ -11,7 +11,7 @@ export const Nav = ({ children }) => {
         <li>
           <NavLink to="/products">Produkter</NavLink>
         </li>
-        <div className={s.logo}>Bageriet</div>
+        <h1 className={s.logo}>Bageriet</h1>
         <li>
           <NavLink to="/contact">Kontakt</NavLink>
         </li>
