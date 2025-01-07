@@ -1,30 +1,53 @@
 @import "../../styles/variables";
 .carousel {
   position: relative;
-  // margin-top: -90px;
   position: relative;
   z-index: 1;
+  margin-top: -90px;
   img {
     width: 100%;
+    // transition: opacity 1s ease;
   }
   .navigation {
+    > * {
+      all: unset;
+      aspect-ratio: 1/1;
+      height: 2.5rem;
+      img {
+        opacity: 50%;
+        filter: invert(1);
+      }
+    }
     .left {
+      -webkit-transform: scaleX(-1);
       position: absolute;
       top: 50%;
-      left: 0;
+      left: 1rem;
+      transform: scaleX(-1);
     }
     .right {
       position: absolute;
       top: 50%;
-      right: 0;
+      right: 1rem;
     }
   }
   .circleContainer {
+    display: flex;
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    justify-content: space-between;
+    gap: 0.5rem;
+    transform: translate(0, -50%);
+
     .circle {
       border-radius: 50%;
-      background-color: $color-black;
+      background-color: $color-white;
       aspect-ratio: 1/1;
       width: 1rem;
+      &.active {
+        background-color: $color-grey;
+      }
     }
   }
   h2 {

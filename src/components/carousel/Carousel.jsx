@@ -12,7 +12,7 @@ export const Carousel = () => {
   const [currentImage, setCurrentImage] = useState(0);
 
   function nextImage() {
-    if (currentImage === imageArray - 1) {
+    if (currentImage === imageArray.length - 1) {
       setCurrentImage(0);
     } else {
       setCurrentImage(currentImage + 1);
@@ -21,7 +21,7 @@ export const Carousel = () => {
 
   function previousImage() {
     if (currentImage === 0) {
-      setCurrentImage(imageArray - 1);
+      setCurrentImage(imageArray.length - 1);
     } else {
       setCurrentImage(currentImage - 1);
     }
@@ -37,22 +37,31 @@ export const Carousel = () => {
   }, [currentImage]);
 
   return (
-    <div className={s.carousel}>
+    <section className={s.carousel} aria-label="Fresh baked goods">
       <img src={imageArray[currentImage]} alt="" />
       <h2>Vi elsker at lave brød</h2>
       <div className={s.navigation}>
         <button className={s.left} onClick={() => previousImage()}>
-          left
+          <img src="public/assets/icons/chevron.png" alt="" />
         </button>
         <button className={s.right} onClick={() => nextImage()}>
-          right
+          <img src="public/assets/icons/chevron.png" alt="" />
         </button>
       </div>
       <div className={s.circleContainer}>
-        <span className={s.circle} onClick={() => setCurrentImage(1)} />
-        <span className={s.circle} onClick={() => setCurrentImage(2)} />
-        <span className={s.circle} onClick={() => setCurrentImage(3)} />
+        <div
+          className={`${s.circle} ${currentImage === 0 ? s.active : ""}`}
+          onClick={() => setCurrentImage(0)}
+        />
+        <div
+          className={`${s.circle} ${currentImage === 1 ? s.active : ""}`}
+          onClick={() => setCurrentImage(1)}
+        />
+        <div
+          className={`${s.circle} ${currentImage === 2 ? s.active : ""}`}
+          onClick={() => setCurrentImage(2)}
+        />
       </div>
-    </div>
+    </section>
   );
 };
