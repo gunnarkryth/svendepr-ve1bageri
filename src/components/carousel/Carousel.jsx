@@ -12,7 +12,7 @@ export const Carousel = () => {
   const [currentImage, setCurrentImage] = useState(0);
 
   function nextImage() {
-    if (currentImage === 2) {
+    if (currentImage === imageArray - 1) {
       setCurrentImage(0);
     } else {
       setCurrentImage(currentImage + 1);
@@ -21,7 +21,7 @@ export const Carousel = () => {
 
   function previousImage() {
     if (currentImage === 0) {
-      setCurrentImage(2);
+      setCurrentImage(imageArray - 1);
     } else {
       setCurrentImage(currentImage - 1);
     }
