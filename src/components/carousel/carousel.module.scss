@@ -1,0 +1,40 @@
+@import "../../styles/variables";
+.carousel {
+  position: relative;
+  // margin-top: -90px;
+  position: relative;
+  z-index: 1;
+  img {
+    width: 100%;
+  }
+  .navigation {
+    .left {
+      position: absolute;
+      top: 50%;
+      left: 0;
+    }
+    .right {
+      position: absolute;
+      top: 50%;
+      right: 0;
+    }
+  }
+  .circleContainer {
+    .circle {
+      border-radius: 50%;
+      background-color: $color-black;
+      aspect-ratio: 1/1;
+      width: 1rem;
+    }
+  }
+  h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $color-white;
+    font-size: $font_large;
+    font-family: lobster;
+    text-shadow: 0 0.5rem 1rem black;
+  }
+}
