@@ -1,0 +1,17 @@
+.modalWrapper {
+  display: flex;
+  position: sticky;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  .modal {
+    position: absolute;
+    width: 50vw;
+    height: 50vh;
+  }
+}
