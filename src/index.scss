@@ -1,6 +1,17 @@
+@font-face {
+  font-family: "lobster";
+  src: url("public/assets/fonts/Lobster 1.4.otf");
+}
+
+@font-face {
+  font-family: "open_sans";
+  src: url("public/assets/fonts/OpenSans-Regular.ttf");
+}
+
 * {
   margin: 0;
   padding: 0;
+  font-family: open_sans;
 }
 
 body {
