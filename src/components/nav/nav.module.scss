@@ -1,4 +1,4 @@
-@import "../../styles/variables";
+@import "/src/styles/variables";
 
 .nav {
   background-image: url("public/assets/images/slide1.jpg");
@@ -6,14 +6,14 @@
   background-size: 100%;
   background-repeat: no-repeat;
   width: 100%;
-  
+
   ul {
-    position: relative;
-    z-index: 1000;
     display: grid;
+    position: relative;
     grid-template-columns: 1fr 1fr 3fr 1fr 1fr;
     align-items: center;
     gap: 0.5rem;
+    z-index: 1000;
     z-index: 1000;
     margin: auto;
     width: 60%;

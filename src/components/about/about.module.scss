@@ -1,0 +1,27 @@
+@import "/src/styles/variables";
+
+.about {
+  hgroup {
+    padding: 6rem;
+    * {
+      text-align: center;
+    }
+    h2 {
+      color: $color-black;
+      margin-bottom: 3rem;
+      font-weight: normal;
+      font-family: lobster;
+    }
+    h5 {
+      color: $color-grey;
+    }
+  }
+  .cardContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-self: center;
+    gap: 6rem;
+    width: 80%;
+  }
+}

@@ -1,11 +1,13 @@
+@import "/src/styles/variables";
+
 @font-face {
-  font-family: "lobster";
   src: url("public/assets/fonts/Lobster 1.4.otf");
+  font-family: "lobster";
 }
 
 @font-face {
-  font-family: "open_sans";
   src: url("public/assets/fonts/OpenSans-Regular.ttf");
+  font-family: "open_sans";
 }
 
 * {
@@ -19,4 +21,8 @@ body {
   flex-direction: column;
   box-sizing: border-box;
   min-height: 100vh;
+}
+
+p {
+  color: $color-grey;
 }

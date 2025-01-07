@@ -1,4 +1,6 @@
-.modalWrapper {
+@import "/src/styles/variables";
+
+.modalContainer {
   display: flex;
   position: sticky;
   top: 0;
