@@ -1,0 +1,50 @@
+@import "/src/styles/variables";
+
+.newsletter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 6rem 0;
+  background-image: url("/assets/images/newsletterbg.jpg");
+  background-position: center;
+  background-size: 100%;
+  padding: 3rem 0 6rem;
+  .signupForm {
+    width: 80%;
+    hgroup {
+      color: $color-white;
+      h2 {
+        margin-bottom: 0.25rem;
+        font-weight: normal;
+        font-size: 1.5rem;
+        font-family: lobster;
+      }
+      h5 {
+        margin-bottom: 1.5rem;
+        font-weight: normal;
+        font-size: 0.5rem;
+      }
+    }
+  }
+
+  form {
+    display: grid;
+    grid-template-columns: 1fr 18fr 6fr;
+    width: auto;
+    height: 2.5rem;
+    img {
+      background-color: #bcc8d4;
+      height: 100%;
+    }
+    input {
+      all: unset;
+      background-color: $color-white;
+    }
+    button {
+      all: unset;
+      background-color: #607684;
+      color: $color-white;
+      text-align: center;
+    }
+  }
+}
