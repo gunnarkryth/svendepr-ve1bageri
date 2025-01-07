@@ -10,39 +10,43 @@
   background-size: 100%;
   padding: 3rem 0 6rem;
   .signupForm {
-    width: 80%;
+    width: 50%;
     hgroup {
       color: $color-white;
       h2 {
         margin-bottom: 0.25rem;
         font-weight: normal;
-        font-size: 1.5rem;
+        font-size: $font-medium;
         font-family: lobster;
       }
       h5 {
         margin-bottom: 1.5rem;
         font-weight: normal;
-        font-size: 0.5rem;
+        font-size: $font-small;
       }
     }
   }
 
   form {
-    display: grid;
-    grid-template-columns: 1fr 18fr 6fr;
+    display: flex;
     width: auto;
     height: 2.5rem;
     img {
       background-color: #bcc8d4;
-      height: 100%;
+      padding: 0.75rem;
+      aspect-ratio: 1/1;
+      // height: 100%;
+      width: auto;
     }
     input {
       all: unset;
       background-color: $color-white;
+      width: 30rem;
     }
     button {
       all: unset;
       background-color: #607684;
+      padding: 0.5rem 2rem;
       color: $color-white;
       text-align: center;
     }
